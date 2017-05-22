@@ -4,9 +4,12 @@
         <div class="content">
             <v-menu></v-menu>
             <div class="main">
-                <slot></slot>
+                <slot name="main"></slot>
             </div>
         </div>
+        <slot name="layout">
+            
+        </slot>
         <Loading></Loading>
     </div>
 </template>
